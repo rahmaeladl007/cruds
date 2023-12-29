@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body> 
+  <div class="header">
+    <h1>cruds</h1>
+    <p>prodect managment system</p>
+  </div>
+    <div class="input">
+
+      <input type="text" id="title"  class="title" placeholder="title">
+      <div class="price">
+      <input  onkeyup="getTotal()"  type="number" id="price" placeholder="price">
+      <input  onkeyup="getTotal()" type="number" id="texes" placeholder="texes">
+      <input  onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+      <input   onkeyup="getTotal()" type="number" id="dicount" placeholder="dicount">
+      <small id="total"></small>
+    </div>
+    <div class="complete">
+    <input type="text" id="count"  class="count" placeholder="count">
+    <input type="text" id="categery"  class="categery" placeholder="categery">
+    <button type="submit" class="btncreate" id="create" >create</button>
+    <input type="search" id="search"  class="search" placeholder="search">
+    <button type="submit" class="btnsearch  " id="btnsearch" >search by title</button>
+    <button type="submit" class="btnsearch"   id="btnsearch" >search by categery</button>
+  </div>
+    
+    </div>
+    <div class="output">
+      <table>
+        <thead>
+          <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>price</th>
+          <th>price</th>
+          <th>ads</th>
+          <th>dicount</th>
+          <th>total</th>
+          <th>categery</th>
+          <th>update</th>
+          <th>delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>iphone</td>
+            <td>12</td>
+            <td>212</td>
+            <td>121</td>
+            <td>21</td>
+            <td>324</td>
+            <td>phone</td>
+            <td> <button type="submit" class="update" id="update" >update</button></td>
+            <td> <button type="submit" class="delete" id="delete" >delete</button></td>
+           
+
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>iphone</td>
+            <td>12</td>
+            <td>212</td>
+            <td>121</td>
+            <td>21</td>
+            <td>324</td>
+            <td>phone</td>
+            <td> <button type="submit" class="update" id="update" >update</button></td>
+            <td> <button type="submit" class="delete" id="delete" >delete</button></td>
+           
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
